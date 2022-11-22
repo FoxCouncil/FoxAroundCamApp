@@ -5,9 +5,9 @@ namespace FoxAroundCamApp;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
-	{
-		InitializeComponent();
+    public MainPage()
+    {
+	    InitializeComponent();
 
         Device.StartTimer(new TimeSpan(0, 5, 0), TimerTick);
     }
