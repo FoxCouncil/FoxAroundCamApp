@@ -6,15 +6,22 @@
 
     <foldable:TwoPaneView TallModeConfiguration="TopBottom" WideModeConfiguration="SinglePane" PanePriority="Pane1">
         <foldable:TwoPaneView.Pane1 BackgroundColor="#dddddd">
-            <WebView>
+            <WebView x:Name="Wv1">
                 <WebView.Source>
                     <HtmlWebViewSource>
                         <HtmlWebViewSource.Html>
                             <![CDATA[
-<HTML STYLE="margin:0;padding:0;background:pink;">
-<BODY STYLE="margin:0;padding:0;">
-<IMG HEIGHT="100%" WIDTH="100%" SRC="http://10.10.10.3/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=1&amp;scale=100"
-</BODY>
+<HTML>
+    <HEAD>
+        <STYLE>
+            html { background: black; }
+            body { margin:0; padding:0; }
+            img { width: 100vw; height: 100vh; }
+        </STYLE>
+    </HEAD>
+    <BODY>
+        <IMG SRC="http://10.10.10.3/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=1&amp;scale=100"
+    </BODY>
 </HTML>
                             ]]>
                         </HtmlWebViewSource.Html>
@@ -23,15 +30,22 @@
             </WebView>
         </foldable:TwoPaneView.Pane1>
         <foldable:TwoPaneView.Pane2>
-            <WebView>
+            <WebView x:Name="Wv2">
                 <WebView.Source>
                     <HtmlWebViewSource>
                         <HtmlWebViewSource.Html>
                             <![CDATA[
-<HTML STYLE="margin:0;padding:0;background:pink;">
-<BODY STYLE="margin:0;padding:0;">
-<IMG HEIGHT="100%" WIDTH="100%" SRC="http://10.10.10.3/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=2&amp;scale=100"
-</BODY>
+<HTML>
+    <HEAD>
+        <STYLE>
+            html { background: black; }
+            body { margin:0; padding:0; }
+            img { width: 100vw; height: 100vh; }
+        </STYLE>
+    </HEAD>
+    <BODY>
+        <IMG SRC="http://10.10.10.3/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=2&amp;scale=100"
+    </BODY>
 </HTML>
                             ]]>
                         </HtmlWebViewSource.Html>

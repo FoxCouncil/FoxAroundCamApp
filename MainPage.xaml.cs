@@ -1,4 +1,5 @@
-﻿using Microsoft.Maui.Foldable;
+﻿using Java.Util;
+using Microsoft.Maui.Foldable;
 
 namespace FoxAroundCamApp;
 
@@ -7,13 +8,16 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-	}
 
-    protected override void OnAppearing()
+        Device.StartTimer(new TimeSpan(0, 5, 0), TimerTick);
+    }
+
+    private bool TimerTick()
     {
-        base.OnAppearing();
+        Wv1.Reload();
+        Wv2.Reload();
 
-        DualScreenInfo.Current.SpanMode = Microsoft.Maui.Controls.Foldable.TwoPaneViewMode.Tall;
+        return true;
     }
 }
 
