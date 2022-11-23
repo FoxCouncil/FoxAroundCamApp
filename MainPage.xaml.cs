@@ -1,13 +1,10 @@
-﻿using Java.Util;
-using Microsoft.Maui.Foldable;
-
-namespace FoxAroundCamApp;
+﻿namespace FoxAroundCamApp;
 
 public partial class MainPage : ContentPage
 {
     public MainPage()
     {
-	    InitializeComponent();
+        InitializeComponent();
 
         Device.StartTimer(new TimeSpan(0, 5, 0), TimerTick);
     }
