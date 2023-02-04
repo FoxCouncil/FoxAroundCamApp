@@ -20,7 +20,7 @@
         </STYLE>
     </HEAD>
     <BODY>
-        <IMG SRC="http://10.10.10.3/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=1&amp;scale=100"
+        <IMG SRC="http://cams/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=1&amp;scale=100"
     </BODY>
 </HTML>
                             ]]>
@@ -44,7 +44,7 @@
         </STYLE>
     </HEAD>
     <BODY>
-        <IMG SRC="http://10.10.10.3/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=2&amp;scale=100"
+        <IMG SRC="http://cams/zm/cgi-bin/nph-zms?mode=jpeg&amp;monitor=2&amp;scale=100"
     </BODY>
 </HTML>
                             ]]>
